@@ -1,0 +1,38 @@
+git init
+
+when file created in git, it is by default in 'working directory'.
+then, it can be added to staged area for temporary checking.
+once everything is settled, it can be committed from staged area to repository
+
+git status 
+    - red indicates that the file is in 'working directory'
+    - green indicates that the file is in 'staged' area
+
+'git add <file>' is the way of adding file to 'staged' area
+'git add .', add everything in 'working directory' to 'staged' area
+
+'git commit -m 'add 1.txt', add file to 'repository'
+    '-m' here means message, the text following '-m' can be any messages
+    and here 'add 1.txt' is used for explaining the reason of this commit
+
+'git log' - display commit history
+        short version, 'git log --oneline
+
+'git checkout -- <file>', delete modified files in 'Changes' in SOURCE CONTROL
+
+'git reset HEAD <file>', put file back from staged area to working directory
+
+'git reset --hard HEAD~1', call back files from repository
+
+'git branch', display all branches available, asterisk is marked on current branch
+
+'git checkout -b feature_a', '-b' is to create a new branch, 'checkout' is to change to another branch.
+hence, this command means that firstly create a 'feature_a' and then change to this new branch from current branch
+this 'feature_a' branch is created based on 'main' branch, so they are the same at first.
+
+'git checkout <branch name>', change to another branch
+
+'git merge <branch name>', specify the other branch to be merged
+
+'rm -rf .git', delete git repository
+
